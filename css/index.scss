@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
+
+$mockup-bg: #46ccde;
+$blue-btn: #1d1b67;
+$lighter-blue-bg: #cdf9ff;
+$greenish-text: #005661;
+$bluish-text: #3b60bf;
+$greyish-text: #626262;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+// mixins 
+@mixin wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+    @media (min-width: 747px) {
+        width: 80%;
+    }
+}
+
+// mixins for tagname
+@mixin h1-style($color) {
+    color: $color;
+    font-size: 3em;
+    line-height: 130%
+}
+
+// using mixins for classes
+@mixin alt-link($color, $decor) {
+    text-decoration: $decor;
+    color: $color;
+    font-weight: 700;
+    font-size: 1.3em;
+
+
+}
+
+// using tag name 
+p{
+    font-size: 1.3em;
+    color: $greyish-text
+}
+
+// using classes
+.btn-link{
+    text-decoration: none;
+    color: white;
+    background-color: $blue-btn;
+    padding: 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+
+header {
+    @include wrapper();
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+    margin-bottom: 5%
+}
+
+.section-1 {
+    .sec-1-1{
+        @include wrapper();
+    }
+    
+    margin-top: 5%;
+    
+    h1 {
+        @include h1-style($blue-btn);
+        margin-bottom: 10px;
+    }
+
+    p{
+        margin-bottom: 20px;
+    }
+
+    .link-con{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .alt-link{
+            @include alt-link($greenish-text, none);
+        }
+    }
+
+    .tag{
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+
+        a{
+            @include alt-link($greenish-text, underline);
+            font-size: 1em;
+        }
+    }
+
+    .mockup-con{
+        background-color: $mockup-bg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 30px;
+
+    }
+}
+
+.section-2{
+    @include wrapper();
+    margin-top: 40px;
+    
+    h1{
+        @include h1-style($blue-btn);
+        margin-bottom: 30px;
+    }
+
+    div{
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    p{
+        margin-bottom: 30px;
+    }
+}
+
+.section-3{
+    background-color: $lighter-blue-bg;
+
+    div{
+        @include wrapper();
+        padding: 50px 0;
+    }
+
+    h1{
+        @include h1-style($greenish-text);
+    }
+
+    h3{
+        @include h1-style($bluish-text);
+        font-size: 1.3em;
+    }
+
+    p{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .alt-link{
+        @include alt-link($greenish-text, underline)
+    }
+}
+
+footer{
+    @include wrapper();
+    padding: 50px 0px;
+
+    img{
+        margin-bottom: 20px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        div{
+            width: 50%;
+            margin-bottom: 20px;
+
+            a{
+                display: block;
+                text-decoration: none;
+                margin-bottom: 10px;
+                color: $greyish-text;
+            }
+        }
+    }
+
+    fieldset{
+        border-radius: 5px;
+        border-color: $greyish-text;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+        input{
+            display: block;
+            width: 50%;
+            font-size: 1.3em;
+            padding-left: 20px;
+            outline: none;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.3em;
+  color: #626262;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: white;
+  background-color: #1d1b67;
+  padding: 20px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+  margin-bottom: 5%;
+}
+@media (min-width: 747px) {
+  header {
+    width: 80%;
+  }
+}
+
+.section-1 {
+  margin-top: 5%;
+}
+.section-1 .sec-1-1 {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 747px) {
+  .section-1 .sec-1-1 {
+    width: 80%;
+  }
+}
+.section-1 h1 {
+  color: #1d1b67;
+  font-size: 3em;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+.section-1 p {
+  margin-bottom: 20px;
+}
+.section-1 .link-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.section-1 .link-con .alt-link {
+  text-decoration: none;
+  color: #005661;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.section-1 .tag {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.section-1 .tag a {
+  text-decoration: underline;
+  color: #005661;
+  font-weight: 700;
+  font-size: 1.3em;
+  font-size: 1em;
+}
+.section-1 .mockup-con {
+  background-color: #46ccde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+}
+
+.section-2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+@media (min-width: 747px) {
+  .section-2 {
+    width: 80%;
+  }
+}
+.section-2 h1 {
+  color: #1d1b67;
+  font-size: 3em;
+  line-height: 130%;
+  margin-bottom: 30px;
+}
+.section-2 div {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.section-2 p {
+  margin-bottom: 30px;
+}
+
+.section-3 {
+  background-color: #cdf9ff;
+}
+.section-3 div {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+@media (min-width: 747px) {
+  .section-3 div {
+    width: 80%;
+  }
+}
+.section-3 h1 {
+  color: #005661;
+  font-size: 3em;
+  line-height: 130%;
+}
+.section-3 h3 {
+  color: #3b60bf;
+  font-size: 3em;
+  line-height: 130%;
+  font-size: 1.3em;
+}
+.section-3 p {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.section-3 .alt-link {
+  text-decoration: underline;
+  color: #005661;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+@media (min-width: 747px) {
+  footer {
+    width: 80%;
+  }
+}
+footer img {
+  margin-bottom: 20px;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer nav div {
+  width: 50%;
+  margin-bottom: 20px;
+}
+footer nav div a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #626262;
+}
+footer fieldset {
+  border-radius: 5px;
+  border-color: #626262;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+footer fieldset input {
+  display: block;
+  width: 50%;
+  font-size: 1.3em;
+  padding-left: 20px;
+  outline: none;
+  border: none;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,39 @@
+light-blue-bg: 46CCDE
+blue-btn: 1D1B67
+lighter-blue-bg: CDF9FF
+greenish-text: 005661
+bluish-text: 3B60BF
+greyish-text: 89939D
+
+
+min width: 767 -- tablet
+min width: 1024 - desktop
+
+
+
+Post when your
+audience is most
+active.
+With TimeNow, automatically schedule your posts on
+Twitter Linkedin, and Instagram to post when your
+followers are most active
+
+TimeNoN does not sal your data, Learn more
+
+TimeNow is used by the most
+influential people.
+
+The most influential people on Facebook, Twitter, and
+instagram are using TweetNow to schedule posts when
+their followers are most active,
+
+They generally receive 23% more engagement than
+people who do not
+
+Unified Dashboard
+Customizable dashboard for all platforms.
+Use Twitter and Instagram but not Linkedin? You can customize your dashboard to your liking. You can evel
+schedule the same post to individual platforms instead all platforms. 
+
+Enhanced Analytics
+Real-time data that tells you everything. Get detailed reports of what's working and what isn't. Engagement rates, impressions, views, and much more data is available to you through our in-depth dashboard tool.
