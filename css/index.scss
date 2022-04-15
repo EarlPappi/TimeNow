@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
 }
 
-// mixins 
+// mixins
 @mixin wrapper {
     width: 90%;
     margin: 0 auto;
@@ -31,7 +31,15 @@ body {
 @mixin h1-style($color) {
     color: $color;
     font-size: 3em;
-    line-height: 130%
+    line-height: 130%;
+
+    @media (min-width: 767px) {
+        font-size: 2.5em;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 3em;
+    }
 }
 
 // using mixins for classes
@@ -40,18 +48,24 @@ body {
     color: $color;
     font-weight: 700;
     font-size: 1.3em;
-
-
 }
 
-// using tag name 
-p{
+// using tag name
+p {
     font-size: 1.3em;
-    color: $greyish-text
+    color: $greyish-text;
+
+    @media (min-width: 767px) {
+        font-size: 1.12em;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 1.3em;
+    }
 }
 
 // using classes
-.btn-link{
+.btn-link {
     text-decoration: none;
     color: white;
     background-color: $blue-btn;
@@ -61,130 +75,205 @@ p{
     outline: none;
     font-size: 1.3em;
     border-radius: 5px;
+
+    @media (min-width: 767px) {
+        font-size: 1.2em;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 1.3em;
+    }
 }
 
+.head-sec-1 {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 767px) {
+        flex-direction: row;
+
+        .mockup-con {
+            width: 120%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
 header {
     @include wrapper();
     display: flex;
     justify-content: space-between;
     padding-top: 10%;
-    margin-bottom: 5%
+    margin-bottom: 5%;
+
+    .desktop {
+        display: none;
+    }
+    @media (min-width: 767px) {
+        .mobile {
+            display: none;
+        }
+        .desktop {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            a {
+                text-decoration: none;
+                font-size: 1.3em;
+                color: $bluish-text;
+            }
+        }
+    }
 }
 
 .section-1 {
-    .sec-1-1{
+    .sec-1-1 {
         @include wrapper();
     }
-    
+
     margin-top: 5%;
-    
+
     h1 {
         @include h1-style($blue-btn);
         margin-bottom: 10px;
     }
 
-    p{
+    p {
         margin-bottom: 20px;
     }
 
-    .link-con{
+    .link-con {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 30px;
 
-        .alt-link{
+        .alt-link {
             @include alt-link($greenish-text, none);
         }
     }
 
-    .tag{
+    .tag {
         display: flex;
         gap: 20px;
         align-items: flex-start;
 
-        a{
+        @media (min-width: 767px) {
+            gap: 10px;
+        }
+
+        @media (min-width: 1024px) {
+            gap: 20px;
+        }
+
+        a {
             @include alt-link($greenish-text, underline);
             font-size: 1em;
         }
     }
-
-    .mockup-con{
-        background-color: $mockup-bg;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 50px 30px;
-
-    }
 }
 
-.section-2{
+.mockup-con {
+    background-color: $mockup-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.section-2 {
     @include wrapper();
     margin-top: 40px;
-    
-    h1{
+
+    h1 {
         @include h1-style($blue-btn);
         margin-bottom: 30px;
     }
 
-    div{
-        display: flex;
-        gap: 5px;
-        flex-wrap: wrap;
+    
+
+    p {
         margin-bottom: 30px;
     }
 
-    p{
-        margin-bottom: 30px;
+    .h1-div-con {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 767px) {
+            flex-direction: row;
+            gap: 20px;
+
+            h1{
+                width: 200%;
+                font-size: 1.5em;
+            }
+
+        }
+
+        @media (min-width: 1024px) {
+            h1{
+                font-size: 3em;
+            }
+        }
+
     }
 }
 
-.section-3{
+.section-3 {
     background-color: $lighter-blue-bg;
 
-    div{
+    div {
         @include wrapper();
         padding: 50px 0;
     }
 
-    h1{
+    h1 {
         @include h1-style($greenish-text);
     }
 
-    h3{
+    h3 {
         @include h1-style($bluish-text);
         font-size: 1.3em;
     }
 
-    p{
+    p {
         margin-bottom: 30px;
         margin-top: 30px;
     }
 
-    .alt-link{
-        @include alt-link($greenish-text, underline)
+    .alt-link {
+        @include alt-link($greenish-text, underline);
     }
 }
 
-footer{
+footer {
     @include wrapper();
     padding: 50px 0px;
 
-    img{
+    img {
         margin-bottom: 20px;
     }
 
-    nav{
+    nav {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
-        div{
+        
+        div {
             width: 50%;
             margin-bottom: 20px;
 
-            a{
+            @media (min-width:767px) {
+                width: 33%;
+            }
+    
+
+            a {
                 display: block;
                 text-decoration: none;
                 margin-bottom: 10px;
@@ -193,14 +282,19 @@ footer{
         }
     }
 
-    fieldset{
-        border-radius: 5px;
+    fieldset {margin-top: 20px;
+        border-radius: 10px;
         border-color: $greyish-text;
         display: flex;
         justify-content: space-between;
         padding: 10px;
 
-        input{
+        @media (min-width:767px) {
+            width: 70%;
+        }
+
+
+        input {
             display: block;
             width: 50%;
             font-size: 1.3em;

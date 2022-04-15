@@ -13,6 +13,16 @@ p {
   font-size: 1.3em;
   color: #626262;
 }
+@media (min-width: 767px) {
+  p {
+    font-size: 1.12em;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.3em;
+  }
+}
 
 .btn-link {
   text-decoration: none;
@@ -24,6 +34,32 @@ p {
   outline: none;
   font-size: 1.3em;
   border-radius: 5px;
+}
+@media (min-width: 767px) {
+  .btn-link {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1024px) {
+  .btn-link {
+    font-size: 1.3em;
+  }
+}
+
+.head-sec-1 {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 767px) {
+  .head-sec-1 {
+    flex-direction: row;
+  }
+  .head-sec-1 .mockup-con {
+    width: 120%;
+  }
+  .head-sec-1 .mockup-con img {
+    width: 100%;
+  }
 }
 
 header {
@@ -37,6 +73,24 @@ header {
 @media (min-width: 747px) {
   header {
     width: 80%;
+  }
+}
+header .desktop {
+  display: none;
+}
+@media (min-width: 767px) {
+  header .mobile {
+    display: none;
+  }
+  header .desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  header .desktop a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #3b60bf;
   }
 }
 
@@ -58,6 +112,16 @@ header {
   line-height: 130%;
   margin-bottom: 10px;
 }
+@media (min-width: 767px) {
+  .section-1 h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .section-1 h1 {
+    font-size: 3em;
+  }
+}
 .section-1 p {
   margin-bottom: 20px;
 }
@@ -78,6 +142,16 @@ header {
   gap: 20px;
   align-items: flex-start;
 }
+@media (min-width: 767px) {
+  .section-1 .tag {
+    gap: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-1 .tag {
+    gap: 20px;
+  }
+}
 .section-1 .tag a {
   text-decoration: underline;
   color: #005661;
@@ -85,7 +159,8 @@ header {
   font-size: 1.3em;
   font-size: 1em;
 }
-.section-1 .mockup-con {
+
+.mockup-con {
   background-color: #46ccde;
   display: flex;
   justify-content: center;
@@ -109,14 +184,37 @@ header {
   line-height: 130%;
   margin-bottom: 30px;
 }
-.section-2 div {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+@media (min-width: 767px) {
+  .section-2 h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .section-2 h1 {
+    font-size: 3em;
+  }
 }
 .section-2 p {
   margin-bottom: 30px;
+}
+.section-2 .h1-div-con {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 767px) {
+  .section-2 .h1-div-con {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .section-2 .h1-div-con h1 {
+    width: 200%;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .section-2 .h1-div-con h1 {
+    font-size: 3em;
+  }
 }
 
 .section-3 {
@@ -137,11 +235,31 @@ header {
   font-size: 3em;
   line-height: 130%;
 }
+@media (min-width: 767px) {
+  .section-3 h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .section-3 h1 {
+    font-size: 3em;
+  }
+}
 .section-3 h3 {
   color: #3b60bf;
   font-size: 3em;
   line-height: 130%;
   font-size: 1.3em;
+}
+@media (min-width: 767px) {
+  .section-3 h3 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .section-3 h3 {
+    font-size: 3em;
+  }
 }
 .section-3 p {
   margin-bottom: 30px;
@@ -176,6 +294,11 @@ footer nav div {
   width: 50%;
   margin-bottom: 20px;
 }
+@media (min-width: 767px) {
+  footer nav div {
+    width: 33%;
+  }
+}
 footer nav div a {
   display: block;
   text-decoration: none;
@@ -183,11 +306,17 @@ footer nav div a {
   color: #626262;
 }
 footer fieldset {
-  border-radius: 5px;
+  margin-top: 20px;
+  border-radius: 10px;
   border-color: #626262;
   display: flex;
   justify-content: space-between;
   padding: 10px;
+}
+@media (min-width: 767px) {
+  footer fieldset {
+    width: 70%;
+  }
 }
 footer fieldset input {
   display: block;
