@@ -10,12 +10,12 @@ body {
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1em;
   color: #626262;
 }
 @media (min-width: 767px) {
   p {
-    font-size: 1.12em;
+    font-size: 1.1em;
   }
 }
 @media (min-width: 1024px) {
@@ -32,12 +32,12 @@ p {
   font-weight: 600;
   border: none;
   outline: none;
-  font-size: 1.3em;
+  font-size: 1em;
   border-radius: 5px;
 }
 @media (min-width: 767px) {
   .btn-link {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 @media (min-width: 1024px) {
@@ -108,7 +108,7 @@ header .desktop {
 }
 .section-1 h1 {
   color: #1d1b67;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 130%;
   margin-bottom: 10px;
 }
@@ -135,7 +135,7 @@ header .desktop {
   text-decoration: none;
   color: #005661;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 .section-1 .tag {
   display: flex;
@@ -156,7 +156,7 @@ header .desktop {
   text-decoration: underline;
   color: #005661;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1em;
   font-size: 1em;
 }
 
@@ -180,7 +180,7 @@ header .desktop {
 }
 .section-2 h1 {
   color: #1d1b67;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 130%;
   margin-bottom: 30px;
 }
@@ -232,7 +232,7 @@ header .desktop {
 }
 .section-3 h1 {
   color: #005661;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 130%;
 }
 @media (min-width: 767px) {
@@ -247,7 +247,7 @@ header .desktop {
 }
 .section-3 h3 {
   color: #3b60bf;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 130%;
   font-size: 1.3em;
 }
@@ -269,7 +269,7 @@ header .desktop {
   text-decoration: underline;
   color: #005661;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 footer {
@@ -321,10 +321,16 @@ footer fieldset {
 footer fieldset input {
   display: block;
   width: 50%;
-  font-size: 1.3em;
+  font-size: 1em;
   padding-left: 20px;
   outline: none;
   border: none;
+}
+@media (max-width: 767px) {
+  footer fieldset .btn-link {
+    padding: 10px;
+    font-size: 0.8em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
